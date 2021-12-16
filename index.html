@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <section id="landing">
+        <nav>
+            <div class="nav__container">
+                <img class="logo"src="./assets/myliblogo.svg" alt="">
+                <ul class="nav__links">
+                    <li><a class="nav__link" href="#">Home</a></li>
+                    <li><a class="nav__link no-cursor" href="#">Contact</a></li>
+                    <li><a class="nav__link nav__link--primary" href="books.html">Books</a></li>
+                </ul>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button  class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list"> 
+                        <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="" class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header__container">
+                <div class="header__description">
+                    <h1>Virginia Online Library</h1>
+                    <h2>Explore a Broad Collection of Books</h2>
+                    <a href="#features"><button class="btn">Browse Books</button></a>
+                </div>
+                <figure class="header__img--wrapper">
+                    <img src="./assets/undraw_reading_time_gvg0.svg" alt="">
+                </figure>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section id="highlights">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                       What's so Special? 
+                    </h2>
+                    <div class="highlight__wrapper">
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                                <h3 class="highlight__subtitle">Easy and Quick</h3>
+                                <p class="highlight__para">Get access to the books you purchase online instantly!</p>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                                <h3 class="highlight__subtitle">Extensive Variety</h3>
+                                <p class="highlight__para">View and read books from all your favorite genres!</p>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                                <h3 class="highlight__subtitle">Affordable</h3>
+                                <p class="highlight__para">Books come at low costs; starting as low as $10!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Featured Books
+                    </h2>
+                    <div class="books">
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="./assets/better1984.jpg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                1984
+                            </div>
+                            <div class="book__ratings">
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i> 
+                               <i class="fas fa-star"></i> 
+                               <i class="fas fa-star"></i> 
+                               <i class="fas fa-star-half-alt"></i> 
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$20.95</span> $12.95
+                            </div>
+                        </div>
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="./assets/couplenext.jpg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                The Couple Next Door
+                            </div>
+                            <div class="book__ratings">
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i> 
+                               <i class="fas fa-star"></i> 
+                               <i class="fas fa-star"></i> 
+                               <i class="fas fa-star-half-alt"></i> 
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$19.50</span> $9.50
+                            </div>
+                        </div>
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="./assets/fahrenheit.jpg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                Fahrenheit 451
+                            </div>
+                            <div class="book__ratings">
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i> 
+                               <i class="fas fa-star"></i> 
+                               <i class="fas fa-star"></i> 
+                               <i class="fas fa-star-half-alt"></i> 
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$15.95</span> $9.50
+                            </div>
+                        </div>
+                        <div class="book">
+                            <figure class="book__img--wrapper">
+                                <img class="book__img" src="./assets/inheritance.jpg" alt="">
+                            </figure>
+                            <div class="book__title">
+                                The Inheritance Games
+                            </div>
+                            <div class="book__ratings">
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i> 
+                               <i class="fas fa-star"></i> 
+                               <i class="fas fa-star"></i> 
+                               <i class="fas fa-star-half-alt"></i> 
+                            </div>
+                            <div class="book__price">
+                                <span class="book__price--normal">$23.99</span> $12.99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recent">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Latest Books
+                    </h2>
+                <div class="books">
+                    <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="./assets/invisible.jpg" alt="">
+                        </figure>
+                    <div class="book__title">
+                    The Invisible Life of Addie Larue
+                    </div>
+                    <div class="book__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">
+                    $11.95
+                    </div>
+                </div>
+                    <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="./assets/itendswithus.jpg" alt="">
+                        </figure>
+                    <div class="book__title">
+                    It Ends With Us
+                    </div>
+                    <div class="book__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">
+                    $18.99
+                    </div>
+                  </div>
+                  <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="./assets/loveandotherwords.jpg" alt="">
+                        </figure>
+                    <div class="book__title">
+                    Love and Other Words
+                    </div>
+                    <div class="book__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">
+                    $19.99
+                    </div>
+                  </div>
+                  <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="./assets/matched.jpg" alt="">
+                        </figure>
+                    <div class="book__title">
+                    Matched
+                    </div>
+                    <div class="book__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">
+                    $12.50
+                    </div>
+                  </div>
+                  <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="./assets/miceandmen.jpg" alt="">
+                        </figure>
+                    <div class="book__title">
+                    Of Mice and men
+                    </div>
+                    <div class="book__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">
+                    $9.25
+                    </div>
+                  </div>
+                  <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="./assets/nolongerhuman.jpg" alt="">
+                        </figure>
+                    <div class="book__title">
+                    No Longer Human
+                    </div>
+                    <div class="book__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">
+                    $19.99
+                    </div>
+                  </div>
+                  <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="./assets/ocean.jpg" alt="">
+                        </figure>
+                    <div class="book__title">
+                    The Ocean at the End of the Lane
+                    </div>
+                    <div class="book__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">
+                    $14.95
+                    </div>
+                  </div>
+                  <div class="book">
+                        <figure class="book__img--wrapper">
+                            <img class="book__img" src="./assets/today.jpg" alt="">
+                        </figure>
+                    <div class="book__title">
+                    Today, Tonight, Tomorrow
+                    </div>
+                    <div class="book__ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="book__price">
+                    $24.95
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="explore">
+              <div class="container">
+                  <div class="row row__column">
+                      <h2 class="section__title">Explore More Books</h2>
+                      <a href="books.html"><button class="btn">Browse Books</button></a>
+                  </div>
+              </div>
+          </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row row__column">
+                <a href="">
+                    <figure class="footer__logo">
+                        <img class="footer__logo--img" src="./assets/Library.svg" alt="">
+                    </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="" class="footer__link">Home</a>
+                    <a href="" class="footer__link no-cursor">About</a>
+                    <a href="" class="footer__link">Books</a>
+                    <a href="" class="footer__link no-cursor">Contact</a>
+                </div>
+                <div class="footer__copyright">Copyright &copy; 2021 Library</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
